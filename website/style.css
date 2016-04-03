@@ -136,7 +136,7 @@ line-height: 200%;
 {
 	padding-bottom: 60px;
 	background-color:  rgba(214, 248, 224, 1);
-    min-height: calc(100% - 60px);
+    min-height: calc(100% - 160px);
 	vertical-align:center;
 	padding-top: 100px;
 }
