@@ -31,9 +31,9 @@ a:active
 }
 
 body > header {
-	height: 60px;
+	min-height: 60px;
 	width: 100%;
-	background: #00c490;
+	background: #38BCFF;
 	line-height: 60px;
 	z-index: 1;
 	position: fixed;
@@ -67,33 +67,13 @@ header > nav > a
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
-@media only screen and (max-width: 800px){
-   header > nav {
-     display: none;
-   }
-   
-   header > h1
-     {
-	width: 100%;
-    text-align: center;
-   }   
-   
-   header > h2
-     {
-	display: none;
-   }
+	
+header > h1 {
+margin-left: 50px; */
 }
 
-@media only screen and (min-width: 800px){
-	
-   header > h1 {
-   margin-left: 100px;
-   }
-   
-   header > nav {
-   margin-right: 100px;
-   }
+header > nav {
+margin-right: 50px; */
 }
 
 .mainContent {
@@ -103,48 +83,103 @@ header > nav > a
 
 .introduction
 {
-	padding-bottom: 60px;
+	padding-top: 100px;
 	background-color:  rgba(214, 248, 224, 1);
-    min-height: calc(100% - 60px);
-	background-image: url("a.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+    min-height: calc(100% - 130px);
+	background: url(a.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;
 	vertical-align:center;
+	display: flex;
+	flex-direction: column;
+    justify-content: center; /* "align" */
+    align-items: center; /* "valign" */
+	z-index: 0;
 }
 
-.introduction > h2
-{
-	padding-top: 150px;
-	font-size: 3em;
-	font-family: Helvetica;
-	color: #FFF;
-}
+
 
 .introduction > p
 {
-padding-left:20%;
+padding-left:10%;
 padding-right:20%;
-margin-top: 50px;
+padding-bottom: 50px;
 text-align: justify;
-font-size: 1.8em;
-font-family: Helvetica;
+font-size: 1.5em;
+font-family: Raleway;
 color: #FFF;
 line-height: 200%;
 }
 
+blockquote {
+	font-family: Raleway;
+	font-size: 1.9em;
+	padding-left: 10%;
+	padding-right: 10%;
+	line-height: 2em;
+	color: #FFF;
+}
+
+blockquote  > p:first-of-type::before {
+    content:"\201E";
+    font-size: 1.6em;
+}
+
+blockquote  > p:last-of-type::after {
+    content:"\201D";
+    font-size: 1.6em;
+	}
+
+blockquote > p {
+	font-weight: bold;
+}
+	
+blockquote > footer {
+	font-size:1em;
+	margin: 0 auto;
+}
+
+blockquote > footer > cite {
+	display:inline;
+}
+
+.authorInfo {
+	height: 30px; 
+	font-size: 0.8em;
+	text-transform: uppercase;
+	/* font-weight: bold; */
+	line-height: 30px;
+	font-family: Lato;
+	text-align: center;
+	color: #FFF;
+	background: rgba(50,50,50,0.9);
+	box-shadow: 0 -1px 20px rgba(0,0,0,0.9);
+}
+
+footer > p > a:link {
+	color: #FFF;
+}
+
 .listofcontent
 {
-	padding-bottom: 60px;
-	background-color:  rgba(214, 248, 224, 1);
-    min-height: calc(100% - 160px);
+	padding-top: 60px;
+	background-color:  #FFF;
+    min-height: calc(100% - 90px);
 	vertical-align:center;
-	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center; /* "align" */
+    align-items: center; /* "valign" */
+	z-index: 0;
 }
 
 .listofcontent > h2
 {
-	font-size: 5vmin;
-	font-family: Helvetica;
+	font-size: 3em;
+	font-family: Raleway;
 	color: #000;
 }
 
@@ -154,25 +189,26 @@ line-height: 200%;
 	padding-right:20%;
 	margin-top: 50px;
 	text-align: left;
-	font-size: 3vmin;
-	font-family: Helvetica;
+	font-size: 1.7em;
+	font-family: Lato;
 	color: #000;
 	line-height: 200%;
 }
 
 .content
 {
-	background-color:  rgba(214, 248, 224, 1);
+	background-color:  #FFF;
     min-height: calc(100% - 100px);
 	vertical-align:center;
 	padding-top: 100px;
+	padding-bottom: 50px;
 }
 
 .content > h2
 {
 	font-size: 3em;
 	display: inline;
-	font-family: Helvetica;
+	font-family: Raleway;
 	color: #000;
 }
 
@@ -180,15 +216,17 @@ line-height: 200%;
 {
 	font-size: 2em;
 	display: inline;
-	font-family: Helvetica;
+	font-family: Raleway;
 	color: #000;
 }
 
 .content > h4
 {
-	font-family: Helvetica;
+	font-family: Raleway;
 	font-size: 1.8em;
 	margin-top: 20px;
+	padding-left:20%;
+	text-align: left;
 	margin-bottom: 20px;
 	color: #000;
 }
@@ -199,7 +237,7 @@ padding-left:15%;
 padding-right:15%;
 text-align: justify;
 font-size: 1.5em;
-font-family: Helvetica;
+font-family: Lato;
 color: #000;
 line-height: 150%;
 }
