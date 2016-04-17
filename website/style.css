@@ -36,7 +36,6 @@ body > header {
 	background: #38BCFF;
 	line-height: 60px;
 	z-index: 1;
-	position: fixed;
 }
 
 header > h1
@@ -76,6 +75,10 @@ header > nav {
 margin-right: 50px; */
 }
 
+.introduction_header {
+	position: fixed;
+}
+
 .mainContent {
 	height: 100%;
 	text-align: center;
@@ -83,9 +86,8 @@ margin-right: 50px; */
 
 .introduction
 {
-	padding-top: 100px;
-	background-color:  rgba(214, 248, 224, 1);
-    min-height: calc(100% - 130px);
+	background-color:  rgba(10, 10, 10, 1);
+    min-height: calc(100% - 80px);
 	background: url(a.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -98,16 +100,14 @@ margin-right: 50px; */
     justify-content: center; /* "align" */
     align-items: center; /* "valign" */
 	z-index: 0;
+	padding-top: 50px;
 }
-
-
 
 .introduction > p
 {
-padding-left:10%;
-padding-right:20%;
-padding-bottom: 50px;
-text-align: justify;
+	padding-left: 5%;
+	padding-right: 5%;
+text-align: left;
 font-size: 1.5em;
 font-family: Raleway;
 color: #FFF;
@@ -200,7 +200,7 @@ footer > p > a:link {
 	background-color:  #FFF;
     min-height: calc(100% - 100px);
 	vertical-align:center;
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
