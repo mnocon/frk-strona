@@ -5,6 +5,7 @@
 body, html {
 	height: 100%;
 	font-family: Lato;
+	font-size: 16px;
 }
 
 a:link
@@ -33,8 +34,8 @@ a:active
 body > header {
 	min-height: 60px;
 	width: 100%;
-	background: #38BCFF;
-	line-height: 60px;
+	background: #222;
+	line-height:60px;
 	z-index: 1;
 	position: relative;
 }
@@ -43,14 +44,27 @@ header > h1
 {
 	font-size: 2em;
 	font-family: Lato;
+	margin-left: 50px;
+	text-align: center;
 	display: table-cell;
 	float: left;
+}
+
+header > h1 > a:link
+{
+	color: #FFF;
+}
+
+header > h1 > a:visited
+{
+	color: #FFF;
 }
 
 header > h2
 {
 	font-size: 1.2em;
-	font-family: Lato;
+	font-family: Raleway;
+	color: #FFF;
 	display: table-cell;
 	float: left;
 	margin-left: 15px;
@@ -67,11 +81,17 @@ header > nav > a
 	padding-left: 10px;
 	padding-right: 10px;
 }
-	
-header > h1 {
-margin-left: 50px; */
+
+header > nav > a:link
+{
+	color: #EEE;
 }
 
+header > nav > a:visited
+{
+	color: #EEE;
+}
+	
 header > nav {
 margin-right: 50px; */
 }
@@ -108,11 +128,11 @@ margin-right: 50px; */
 {
 	padding-left: 5%;
 	padding-right: 5%;
-text-align: left;
-font-size: 1.5em;
-font-family: Raleway;
-color: #FFF;
-line-height: 200%;
+	text-align: left;
+	font-size: 1.5em;
+	font-family: Raleway;
+	color: #FFF;
+	line-height: 200%;
 }
 
 blockquote {
@@ -126,12 +146,12 @@ blockquote {
 
 blockquote  > p:first-of-type::before {
     content:"\201E";
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 blockquote  > p:last-of-type::after {
     content:"\201D";
-    font-size: 1.6em;
+    font-size: 1.4em;
 	}
 
 blockquote > p {
@@ -151,13 +171,12 @@ blockquote > footer > cite {
 	height: 30px; 
 	font-size: 0.8em;
 	text-transform: uppercase;
-	/* font-weight: bold; */
 	line-height: 30px;
 	font-family: Lato;
 	text-align: center;
 	color: #FFF;
 	background: rgba(50,50,50,0.9);
-	box-shadow: 0 -1px 20px rgba(0,0,0,0.9);
+	box-shadow: 0 -1px 20px rgba(40,40,40, 0.8);
 }
 
 footer > p > a:link {
@@ -166,9 +185,10 @@ footer > p > a:link {
 
 .listofcontent
 {
-	padding-top: 60px;
+	background: url("tlo.jpg") left repeat-y;
+	padding-top: 50px;
 	background-color:  #FFF;
-    min-height: calc(100% - 90px);
+    min-height: calc(100% - 80px);
 	vertical-align:center;
 	display: flex;
 	flex-direction: column;
@@ -179,7 +199,7 @@ footer > p > a:link {
 
 .listofcontent > h2
 {
-	font-size: 3em;
+	font-size: 2.8em;
 	font-family: Raleway;
 	color: #000;
 }
@@ -188,12 +208,71 @@ footer > p > a:link {
 {
 	padding-left:20%;
 	padding-right:20%;
-	margin-top: 50px;
+	margin-top: 30px;
 	text-align: left;
-	font-size: 1.7em;
+	font-size: 1.6em;
 	font-family: Lato;
 	color: #000;
 	line-height: 200%;
+}
+
+#chapter1list, #chapter2list
+{
+	display: none;
+}
+
+.nav, .nav_bottom
+{
+	padding-top: 30px;
+	padding-left:15%;
+	padding-right:15%;
+}
+
+.nav
+{
+	padding-bottom: 20px;
+}
+
+.nav_bottom
+{
+	padding-bottom: 50px;
+}
+.prev
+{
+	float: left;
+}
+
+.next
+{
+	float:right;
+}
+
+.title > h2
+{
+	font-size: 3em;
+	font-family: Raleway;
+	color: #000;
+}
+
+.title > h3
+{
+	font-size: 2em;
+	font-family: Raleway;
+	color: #000;
+}
+
+.title > h4
+{
+	font-size: 1.1em;
+	padding-right: 15%;
+	text-align: right;
+}
+.title > h5
+{
+	padding-top: 5px;
+	font-size: 1em;
+	padding-right: 15%;
+	text-align: right;
 }
 
 .content
@@ -201,45 +280,16 @@ footer > p > a:link {
 	background-color:  #FFF;
     min-height: calc(100% - 100px);
 	vertical-align:center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-left:15%;
+	padding-right:15%;
 	position: relative;
 	z-index: 0;
 }
 
-.content > h2
-{
-	font-size: 3em;
-	display: inline;
-	font-family: Raleway;
-	color: #000;
-}
-
-.content > h3
-{
-	font-size: 2em;
-	display: inline;
-	font-family: Raleway;
-	color: #000;
-}
-
-.content > h4
-{
-	font-family: Raleway;
-	font-size: 1.8em;
-	margin-top: 20px;
-	padding-left:20%;
-	text-align: left;
-	margin-bottom: 20px;
-	color: #000;
-}
-
 .content > p
 {
-padding-left:15%;
-padding-right:15%;
 text-align: justify;
-font-size: 1.5em;
+font-size: 1.4em;
 font-family: Lato;
 color: #000;
 line-height: 150%;
@@ -247,19 +297,198 @@ line-height: 150%;
 
 .content > h5
 {
+	font-family: Raleway;
+	font-size: 1.6em;
+	margin-top: 15px;
+	padding-left: 10%;
+	text-align: left;
+	margin-bottom: 10px;
+	color: #000;
+}
+
+@media only screen and (max-width: 1100px)
+{
+	header > h2
+	{
+		display: none;
+	}
+	
+	blockquote {
 	font-size: 1.5em;
-	padding-bottom: 30px;
+	line-height: 1.5em;
+	}
+	
+	.introduction > p
+	{
+	font-size: 1.1em;
+	line-height: 150%;
+	}
+	
 }
 
-.prev
+@media only screen and (max-width: 775px)
 {
-	float: left;
-	padding-left:3%;
-	position: fixed;
+	header > h1
+	{
+		font-size: 1.2em;
+	}
+	
+	.nav, .nav_bottom, .content
+	{
+		padding-left:8%;
+		padding-right:8%;
+	}
+
+	header > nav 
+	{
+	font-size: 1.2em;
+	}
+	
+	.introduction
+	{
+		padding-top: 70px;
+		padding-bottom: 40px
+	}
+	
+	blockquote {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	}
+	
+	.introduction > p
+	{
+	font-size: 1.1em;
+	line-height: 150%;
+	}
+	
+	.listofcontent
+	{
+		padding-top: 80px;
+	}
+	
+	.title > h2
+	{
+		font-size: 2em;
+	}
+	
+	.title > h3
+	{
+		font-size: 1.6em;
+	}	
+		
+	.title > h4
+	{
+		font-size: 0.9em;
+	}
+	
+	.title > h5
+	{
+		font-size: 0.8em;
+	}
+	
+	.content > p
+	{
+		font-size: 1.1em;
+	}
+	
 }
 
-.next
+@media only screen and (max-width: 550px)
 {
-	float:right;
-	padding-right:15%;
+	header > h1
+	{
+		font-size: 1.2em;
+		margin-left: 10px;
+	}
+	header > nav 
+	{
+	font-size: 1.2em;
+	margin-right: 10px;
+	}
+
+	.introduction
+	{
+		padding-top: 70px;
+		padding-bottom: 40px
+	}
+
+	.introduction > p
+	{
+	font-size: 1.3em;
+	line-height: 150%;
+	}
+
+	blockquote {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 440px)
+{
+	header > h1
+	{
+		font-size: 0.9em;
+	}
+	header > nav 
+	{
+	font-size: 0.9em;
+	}
+	
+	.nav, .nav_bottom
+	{
+		font-size: 0.8em;
+	}	
+	
+	.introduction
+	{
+		padding-top: 70px;
+		padding-bottom: 40px
+	}
+	
+	.introduction > p
+	{
+	font-size: 1.1em;
+	line-height: 150%;
+	}
+	
+	.title > h2
+	{
+		font-size: 1.7em;
+	}
+	
+	.title > h3
+	{
+		font-size: 1.4em;
+	}	
+		
+	.title > h4
+	{
+		font-size: 0.8em;
+	}
+	
+	.title > h5
+	{
+		font-size: 0.7em;
+	}
+	
+	.content > p
+	{
+		font-size: 1em;
+	}
+	
+	.content > h5
+	{
+		font-size: 1.1em;
+	}
+
+	blockquote {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	}
+	
+	.authorInfo {
+		height: 30px; 
+		font-size: 0.6em;
+	}
 }
