@@ -8,6 +8,11 @@ body, html {
 	font-size: 16px;
 }
 
+a 
+{
+    cursor: pointer;
+}
+
 a:link
 {
 	color: #173e43;
@@ -228,7 +233,22 @@ footer > p > a:link {
 	padding-right:15%;
 }
 
-.nav
+.nav2
+{
+	padding-top: 90px;
+	padding-left:15%;
+	padding-right:15%;
+}
+
+.nav3
+{
+	padding-left: 50px;
+	padding-right: 200px;
+	padding-top: 90px;
+	z-index: 1;
+}
+
+.nav, .nav2
 {
 	padding-bottom: 20px;
 }
@@ -242,7 +262,7 @@ footer > p > a:link {
 {
 	float: left;
 }
-.nav1 > .prev > .fixedContainer > a::before
+.nav1 > .prev > .fixedContainer > a::before, .nav3 > .prev > .fixedContainer > a::before
 {
 	content:"<< Poprzedni rozdział";
 }
@@ -266,7 +286,7 @@ footer > p > a:link {
 	float:right;
 }
 
-.nav1 > .next> .fixedContainer > a::before
+.nav1 > .next> .fixedContainer > a::before, .nav3 > .next> .fixedContainer > a::before
 {
 	content:"Następny rozdział >>";
 }
@@ -332,18 +352,18 @@ line-height: 150%;
 
 @media only screen and (max-width: 1350px)
 {
-	.nav1
+	.nav1, .nav3
 	{
 		padding-left: 5px;
 		padding-right: 20px;
 	}
 	
-	.nav1 > .prev> .fixedContainer > a::before
+	.nav1 > .prev> .fixedContainer > a::before, .nav3 > .prev> .fixedContainer > a::before
 	{
 		content:"<<";
 	}
 	
-	.nav1 > .next> .fixedContainer > a::before
+	.nav1 > .next> .fixedContainer > a::before, .nav3 > .next> .fixedContainer > a::before
 	{
 		content:">>";
 	}
@@ -443,6 +463,9 @@ line-height: 150%;
 		font-size: 1.2em;
 		margin-left: 10px;
 	}
+	
+	
+	
 	header > nav 
 	{
 	font-size: 1.2em;
@@ -465,6 +488,16 @@ line-height: 150%;
 	font-size: 1.5em;
 	line-height: 1.5em;
 	}
+	
+	.listofcontent > h2
+	{
+		font-size: 1.6em;
+	}
+	
+	.listofcontent > p, .listofcontent > ol
+	{
+		font-size: 1.2em;
+	}
 }
 
 @media only screen and (max-width: 440px)
@@ -478,7 +511,7 @@ line-height: 150%;
 	font-size: 0.9em;
 	}
 	
-	.nav, .nav_bottom
+	.nav, .nav_bottom, .nav2
 	{
 		font-size: 0.8em;
 	}	
@@ -533,5 +566,15 @@ line-height: 150%;
 	.authorInfo {
 		height: 30px; 
 		font-size: 0.6em;
+	}
+	
+	.listofcontent > h2
+	{
+		font-size: 1.4em;
+	}
+	
+	.listofcontent > p, .listofcontent > ol
+	{
+		font-size: 1em;
 	}
 }
