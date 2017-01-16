@@ -106,6 +106,13 @@ margin-right: 50px; */
 }
 
 .mainContent {
+	background: url("tlo.jpg") left repeat-y;
+	height: auto;
+	text-align: center;
+}
+
+.mainContentIntroduction {
+	background: url("tlo.jpg") left repeat-y;
 	height: 100%;
 	text-align: center;
 }
@@ -123,8 +130,8 @@ margin-right: 50px; */
 	vertical-align:center;
 	display: flex;
 	flex-direction: column;
-    justify-content: center; /* "align" */
-    align-items: center; /* "valign" */
+    justify-content: center;
+    align-items: center;
 	z-index: 0;
 	padding-top: 50px;
 }
@@ -190,9 +197,7 @@ footer > p > a:link {
 
 .listofcontent
 {
-	background: url("tlo.jpg") left repeat-y;
 	padding-top: 50px;
-	background-color:  #FFF;
     min-height: calc(100% - 80px);
 	vertical-align:center;
 	display: flex;
@@ -321,7 +326,6 @@ footer > p > a:link {
 
 .content
 {
-	background-color:  #FFF;
     min-height: calc(100% - 100px);
 	vertical-align:center;
 	padding-left:15%;
@@ -354,7 +358,7 @@ line-height: 150%;
 {
 	.nav1, .nav3
 	{
-		padding-left: 5px;
+		padding-left: 15px;
 		padding-right: 20px;
 	}
 	
