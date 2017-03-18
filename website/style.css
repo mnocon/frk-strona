@@ -191,6 +191,11 @@ blockquote > footer > cite {
 	box-shadow: 0 -1px 20px rgba(40,40,40, 0.8);
 }
 
+.content
+{
+	margin-bottom: 15px;
+}
+
 footer > p > a {
 	margin-left: 25px;
 }
@@ -346,7 +351,7 @@ footer > p > a:visited {
 .content > p
 {
 text-align: justify;
-font-size: 1.4em;
+font-size: 1.2em;
 font-family: Lato;
 color: #000;
 line-height: 150%;
@@ -366,12 +371,35 @@ line-height: 150%;
 .content > h6
 {
 	font-family: Raleway;
-	font-size: 1.2em;
-	margin-top: 30px;
-	padding-left: 10%;
-	text-align: center;
+	font-size: 1.3em;
+	margin-top: 20px;
+	padding-left: 7%;
+	text-align: left;
 	margin-bottom: 10px;
 	color: #000;
+}
+
+.content > ul, .content > ol
+{
+	font-size: 1.2em;
+	text-align: left;
+	margin-top: 10px;
+	line-height: 150%;
+}
+
+.content > ul > li, .content > ol > li
+{
+	margin-top: 10px;
+	padding-left: 0%;
+	/*text-align: left;*/
+	margin-bottom: 10px;
+	color: #000;
+}
+
+.content > ul > li > img, .content > ol > li > img
+{
+    display: block;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 1350px)
