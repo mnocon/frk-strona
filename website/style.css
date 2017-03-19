@@ -156,8 +156,6 @@ margin-right: 50px; */
     background-size: cover; 
     background-size: 100% 100%;
 	vertical-align:center;
-	display: flex;
-	flex-direction: column;
     justify-content: center;
     align-items: center;
 	z-index: 0;
@@ -195,6 +193,7 @@ blockquote  > p:last-of-type::after {
 	}
 
 blockquote > p {
+	padding-top: 30px;
 	font-weight: bold;
 }
 	
