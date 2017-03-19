@@ -219,20 +219,25 @@ blockquote > footer > cite {
 	box-shadow: 0 -1px 20px rgba(40,40,40, 0.8);
 }
 
+.authorsInfo
+{
+	display: inline;
+}
+
 .content
 {
 	margin-bottom: 15px;
 }
 
-footer > p > a {
+footer > p ~ a {
 	margin-left: 25px;
 }
 
-footer > p > a:link {
+footer > p ~ a:link {
 	color: #DDD;
 }
 
-footer > p > a:visited {
+footer > p ~ a:visited {
 	color: #AAA;
 }
 
@@ -572,6 +577,11 @@ line-height: 150%;
 		padding-bottom: 40px
 	}
 
+	.authorsInfo
+	{
+		display:none;
+	}
+
 	.introduction > p
 	{
 	font-size: 1.3em;
@@ -663,7 +673,6 @@ line-height: 150%;
 	}
 
 	.authorInfo > a::before {
-    	content: "aaaaa";
 		font-size: 1em;		
 	}
 	
