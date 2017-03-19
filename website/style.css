@@ -126,7 +126,7 @@ header > nav > a:visited
 }
 	
 header > nav {
-margin-right: 50px; */
+margin-right: 50px;
 }
 
 .introduction_header {
@@ -221,11 +221,6 @@ blockquote > footer > cite {
 .authorsInfo
 {
 	display: inline;
-}
-
-.content
-{
-	margin-bottom: 15px;
 }
 
 footer > p ~ a {
@@ -371,11 +366,11 @@ footer > p ~ a:visited {
 
 .content
 {
-	height: auto;
-    min-height: calc(100% - 100px);
+	height: 100%;
 	vertical-align:center;
 	padding-left:15%;
 	padding-right:15%;
+	margin-bottom: 30px;
 	position: relative;
 	z-index: 0;
 }
@@ -386,6 +381,8 @@ iframe
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	width: 60%;
+	height: 315px;
 }
 
 .content > p
