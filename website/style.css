@@ -15,6 +15,16 @@ table.center {
 	margin-bottom: 10px;
   }
 
+strong.important
+{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 td
 {
 	  padding-left: 5px;
