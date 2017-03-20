@@ -380,6 +380,12 @@ footer > p ~ a:visited {
 	list-style-type: circle;
 }
 
+.interviewQuestion
+{
+	line-height: 200%;
+	padding-left: 30px;
+}
+
 iframe
 {
 	margin-top: 30px;
