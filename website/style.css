@@ -375,6 +375,11 @@ footer > p ~ a:visited {
 	z-index: 0;
 }
 
+.circle
+{
+	list-style-type: circle;
+}
+
 iframe
 {
 	margin-top: 30px;

@@ -73,8 +73,8 @@
 <li><a id="rozdzial_8">Co radzą inni?</a> 
 <ul id="rozdzial_8_list">
 <li><a href="rozdzial_8_a.html">Od studentów dla studentów.</a></li>
-<li>
-<ul><a id="rodzial_8b_list">Ad fontes – czyli co radzą sami chirurdzy.</a>
+<li><a id="rozdzial_8b">Ad fontes – czyli co radzą sami chirurdzy.</a>
+<ul id="rozdzial_8b_list" class="circle">
 <li><a href="rozdzial_8_b_a.html">Chirurg ogólny</a></li>
 <li><a href="rozdzial_8_b_b.html">Kardiochirurg</a></li>
 <li><a href="rozdzial_8_b_c.html">Torakochirurg</a></li>
@@ -114,6 +114,10 @@ $( "#rozdzial_7" ).click(function() {
 });
 $( "#rozdzial_8" ).click(function() {
   $( "#rozdzial_8_list" ).toggle( "slow" );
+});
+$( "#rozdzial_8b" ).click(function() {
+	console.log("test");
+  $( "#rozdzial_8b_list" ).toggle( "slow" );
 });
 $( "#rozdzial_10" ).click(function() {
   $( "#rozdzial_10_list" ).toggle( "slow" );
