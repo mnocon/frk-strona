@@ -383,8 +383,12 @@ footer > p ~ a:visited {
 
 .interviewQuestion
 {
-	line-height: 200%;
+	margin-top: 15px;
 	padding-left: 30px;
+}
+.interviewQuestion > em
+{
+		line-height: 200%;
 }
 
 iframe
