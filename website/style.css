@@ -233,6 +233,18 @@ blockquote > footer > cite {
 	display: inline;
 }
 
+.authorsInfo > a:link {
+	color: #DDD;
+}
+
+.authorsInfo > a:visited {
+	color: #AAA;
+}
+
+.authorsInfo > a:hover {
+	color: #FFF;
+}
+
 footer > p ~ a {
 	margin-right: 25px;
 }
