@@ -503,7 +503,8 @@ line-height: 150%;
 .authorsLogo
 {
 	float:right;
-	margin-top: 30px;
+	margin-top: 10%;
+	margin-right: 5%;
 }
 
 @media only screen and (max-width: 1350px)
