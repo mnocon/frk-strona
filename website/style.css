@@ -93,6 +93,11 @@ header > h1 > a:visited
 	color: #FFF;
 }
 
+header > h1 > a:hover
+{
+	color: #CCC;
+}
+
 header > h2
 {
 	font-size: 1.2em;
@@ -123,6 +128,11 @@ header > nav > a:link
 header > nav > a:visited
 {
 	color: #EEE;
+}
+
+header > nav > a:hover
+{
+	color: #CCC;
 }
 	
 header > nav {
@@ -233,6 +243,10 @@ footer > p ~ a:link {
 
 footer > p ~ a:visited {
 	color: #AAA;
+}
+
+footer > p ~ a:hover {
+	color: #FFF;
 }
 
 .listofcontent
