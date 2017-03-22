@@ -224,7 +224,7 @@ blockquote > footer > cite {
 }
 
 footer > p ~ a {
-	margin-left: 25px;
+	margin-right: 25px;
 }
 
 footer > p ~ a:link {
@@ -460,6 +460,12 @@ line-height: 150%;
 .alpha
 {
 	list-style-type: lower-alpha;
+}
+
+.centerImage 
+{
+	display: block;
+    margin: 0 auto;
 }
 
 .content > ul > li > img, .content > ol > li > img, .content > p > img
