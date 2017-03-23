@@ -483,6 +483,15 @@ line-height: 150%;
 	padding-bottom: 20px;
 }
 
+.elementMargin > img
+{
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
 .alpha
 {
 	list-style-type: lower-alpha;
@@ -606,7 +615,7 @@ line-height: 150%;
 		font-size: 0.8em;
 	}
 	
-	.content > p
+	.content > p, .content > ul, .content > ol
 	{
 		font-size: 1.1em;
 	}
@@ -710,7 +719,7 @@ line-height: 150%;
 		font-size: 0.7em;
 	}
 	
-	.content > p
+	.content > p, .content > ul, .content > ol
 	{
 		font-size: 1em;
 	}
