@@ -392,6 +392,11 @@ footer > p ~ a:hover {
 	text-align: right;
 }
 
+.minHeight {
+	min-height: calc(100% - 60px);
+	background: url("tlo.jpg") left repeat-y;
+}
+
 .content
 {
 	background: url("tlo.jpg") left repeat-y;
