@@ -393,7 +393,7 @@ footer > p ~ a:hover {
 }
 
 .minHeight {
-	min-height: calc(100% - 60px);
+	min-height: calc(100% - 30px);
 	background: url("tlo.jpg") left repeat-y;
 }
 
@@ -406,7 +406,7 @@ footer > p ~ a:hover {
 	padding-left:15%;
 	padding-right:15%;
 	margin-top: 30px;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 	position: relative;
 	z-index: 0;
 }
