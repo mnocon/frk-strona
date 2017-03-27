@@ -42,7 +42,7 @@
 <section class="content">
 <h5>REDAKTORZY PROWADZĄCY:</h5>
 <p><ul>
-<li>Jakieła Katarzyna (<a href="mailto:katarzyna.anna.jakiela [MALPA] gmail.com">kontakt</a>)</li>
+<li>Jakieła Katarzyna (<a id="mail" href="mailto:katarzyna.anna.jakiela [MALPA] gmail.com">katarzyna.anna.jakiela [MALPA] gmail.com</a>)</li>
 <li>Mąka Kamil</li></ul>
 </p>
 <h5>OPRACOWANIE MERYTORYCZNE:</h5>
@@ -90,5 +90,12 @@ Naczyniowej i Endowaskularnej w latach 2015-2016:
 </p>
 </footer>
 </main>
+<script>
+	$( document ).ready(function() {
+	var text = $( "#mail" ).text().replace(" [MALPA] ", "@");
+    $( "#mail" ).text(text);
+    $( "#mail" ).attr("href", "mailto:" + text)
+});
+</script>
 </body>
 </html>
