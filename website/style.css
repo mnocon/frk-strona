@@ -150,6 +150,7 @@ margin-right: 50px;
 }
 
 .mainContent {
+	background: url("tlo.jpg") left repeat-y;
 	height: 100%;
 	text-align: center;
 }
@@ -165,8 +166,6 @@ margin-right: 50px;
     background-size: cover; 
     background-size: 100% 100%;
 	vertical-align:center;
-	display: flex;
-	flex-direction: column;
     justify-content: center;
     align-items: center;
 	z-index: 0;
@@ -395,12 +394,9 @@ footer > p ~ a:hover {
 
 .content
 {
-<<<<<<< HEAD
-	height: 100%;
-=======
+	background: url("tlo.jpg") left repeat-y;
 	background-color:  #FFF;
-    min-height: calc(100% - 100px);
->>>>>>> parent of eaa4ec7... Dodanie wstazki po bokach rozdzialow
+    min-height: calc(100% - 80px);
 	vertical-align:center;
 	padding-left:15%;
 	padding-right:15%;
@@ -528,7 +524,7 @@ line-height: 150%;
 {
 	.nav1, .nav3
 	{
-		padding-left: 5px;
+		padding-left: 15px;
 		padding-right: 20px;
 	}
 	
