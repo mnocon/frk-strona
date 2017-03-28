@@ -368,6 +368,8 @@ footer > p ~ a:hover {
 .title > h2
 {
 	font-size: 3em;
+	padding-left: 25px;
+	padding-right: 25px;
 	font-family: Raleway;
 	color: #000;
 }
@@ -375,6 +377,8 @@ footer > p ~ a:hover {
 .title > h3
 {
 	font-size: 2em;
+	padding-left: 30px;
+	padding-right: 30px;
 	font-family: Raleway;
 	color: #000;
 }
@@ -736,6 +740,11 @@ line-height: 150%;
 	}
 	
 	.content > h5
+	{
+		font-size: 1.2em;
+	}
+
+	.content > h6
 	{
 		font-size: 1.1em;
 	}
