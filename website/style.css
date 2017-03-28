@@ -419,11 +419,11 @@ footer > p ~ a:hover {
 .interviewQuestion
 {
 	margin-top: 15px;
-	padding-left: 30px;
+	margin-bottom: 10px;
 }
 .interviewQuestion > em
 {
-		line-height: 200%;
+	line-height: 150%;
 }
 
 iframe
