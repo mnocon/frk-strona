@@ -158,7 +158,7 @@ margin-right: 50px;
 .introduction
 {
 	background-color:  rgba(10, 10, 10, 1);
-    min-height: calc(100% - 180px);
+    min-height: calc(100% - 130px);
 	background: url(a.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -169,7 +169,7 @@ margin-right: 50px;
     justify-content: center;
     align-items: center;
 	z-index: 0;
-	padding-top: 150px;
+	padding-top: 100px;
 }
 
 .introduction > p
@@ -585,7 +585,7 @@ line-height: 150%;
 	.introduction
 	{
 		padding-top: 70px;
-		min-height: calc(100% - 140px);
+		min-height: calc(100% - 90px);
 		padding-bottom: 40px
 	}
 	
