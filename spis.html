@@ -107,6 +107,9 @@
 <li><a href="autorzy.html">Autorzy.</a></li>
 </ol>
 <script>
+$(document).ready(function(){
+    $(function(){$('ul').hide();})
+});
 $( "#rozdzial_3" ).click(function() {
   $( "#rozdzial_3_list" ).toggle( "slow" );
 });
