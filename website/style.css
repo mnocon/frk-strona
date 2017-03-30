@@ -158,7 +158,7 @@ margin-right: 50px;
 .introduction
 {
 	background-color:  rgba(10, 10, 10, 1);
-    min-height: calc(100% - 180px);
+    min-height: calc(100% - 130px);
 	background: url(a.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -169,7 +169,7 @@ margin-right: 50px;
     justify-content: center;
     align-items: center;
 	z-index: 0;
-	padding-top: 150px;
+	padding-top: 100px;
 }
 
 .introduction > p
@@ -357,6 +357,7 @@ footer > p ~ a:hover {
 .next
 {
 	float:right;
+	padding-right: 7px;
 }
 
 .nav1 > .next> .fixedContainer > a::before, .nav3 > .next> .fixedContainer > a::before
@@ -367,6 +368,8 @@ footer > p ~ a:hover {
 .title > h2
 {
 	font-size: 3em;
+	padding-left: 25px;
+	padding-right: 25px;
 	font-family: Raleway;
 	color: #000;
 }
@@ -374,6 +377,8 @@ footer > p ~ a:hover {
 .title > h3
 {
 	font-size: 2em;
+	padding-left: 30px;
+	padding-right: 30px;
 	font-family: Raleway;
 	color: #000;
 }
@@ -419,11 +424,11 @@ footer > p ~ a:hover {
 .interviewQuestion
 {
 	margin-top: 15px;
-	padding-left: 30px;
+	margin-bottom: 10px;
 }
 .interviewQuestion > em
 {
-		line-height: 200%;
+	line-height: 150%;
 }
 
 iframe
@@ -492,7 +497,7 @@ line-height: 150%;
 	padding-bottom: 20px;
 }
 
-.elementMargin > img
+.elementMargin > a > img
 {
 	margin-top: 20px;
 	display: block;
@@ -585,7 +590,7 @@ line-height: 150%;
 	.introduction
 	{
 		padding-top: 70px;
-		min-height: calc(100% - 140px);
+		min-height: calc(100% - 90px);
 		padding-bottom: 40px
 	}
 	
@@ -735,6 +740,11 @@ line-height: 150%;
 	}
 	
 	.content > h5
+	{
+		font-size: 1.2em;
+	}
+
+	.content > h6
 	{
 		font-size: 1.1em;
 	}
